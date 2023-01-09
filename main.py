@@ -26,6 +26,7 @@ with open('books.csv', 'w', newline='') as csvfile:
         # Find the title of the book
         title = book.h3.a.attrs['title']
 
+
         # Find the price of the book
         price = book.find('p', class_='price_color').text
 
