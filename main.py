@@ -20,7 +20,10 @@ for book in book_containers:
     # Find the price of the book
     price = book.find('p', class_='price_color').text
 
+    # Find the link to the book
+    link = book.h3.a.attrs['href']
+
     # Print the data for each book
-    print(title, price)
+    print(title, price, link)
 
 
